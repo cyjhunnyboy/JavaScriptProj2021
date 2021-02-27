@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript简介</title>
+    <script type="text/javascript" rel="script">
+        function myFunc() {
+            let x = document.getElementById("demo").value;
+            if (isNaN(x) || x.replace(/(^\s*)|(\s*$)/g, "") === "") {
+                alert("不是数字");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--
+        1、JavaScript简介
+            JavaScript是互联网上最流行的脚本语言，这门语言可用于HTML和web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
+        2、JavaScript是脚本语言
+            JavaScript是一种轻量级的编程语言。
+            JavaScript是可插入HTML页面的编程代码。
+            JavaScript插入HTML页面后，可由所有的现代浏览器执行。
+            JavaScript很容易学习。
+        3、您将学到什么
+            JavaScript：验证输入
+            JavaScript常用于验证用户的输入
+            以上实例只是普通的验证，如果要在生产环境中使用，需要严格判断，如果输入的空格，或者连续空格isNaN是判别不出来的。可以添加正则来判断（后续章节会说明）
+
+        4、你知道吗？
+            JavaScript与Java是两种完全不同的语言，无论在概念上还是设计上。
+            Java（由Sun发明）是更复杂的编程语言。
+            ECMA-262是JavaScript标准的官方名称。
+            JavaScript由Brendan Eich发明。它于1995年出现在Netscape中（该浏览器已停止更新），并于1997年被ECMA（一个标准协会）采纳。
+
+        5、ECMAScript版本
+            年份          名称                  描述
+            1997          ECMAScript 1         第一个版本
+            1998          ECMAScript 2         版本变更
+            1999          ECMAScript 3         添加正则表达式
+                                               添加try/catch
+                          ECMAScript 4         没有发布
+            2009          ECMAScript 5         添加“strict mode”，严格模式
+                                               添加JSON支持
+            2011          ECMAScript 5.1       版本变更
+            2015          ECMAScript 6         添加类和模块
+            2016          ECMAScript 7         添加指数运算符（**）
+                                               增加Array.prototype.includes
+
+           ECMAScript 6也称为ECMAScript 2015。
+           ECMAScript 7也称为ECMAScript 2016。
+    -->
+    <h1>我的第一段JavaScript</h1>
+    <p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+    <label for="demo">请输入数字：</label><input id="demo" type="text"/>
+    <button type="button" onclick="myFunc()">点击这里</button>
+</body>
+</html>

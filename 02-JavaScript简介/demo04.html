@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript简介</title>
+</head>
+<body>
+    <!--
+        1、JavaScript简介
+            JavaScript是互联网上最流行的脚本语言，这门语言可用于HTML和web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
+        2、JavaScript是脚本语言
+            JavaScript是一种轻量级的编程语言。
+            JavaScript是可插入HTML页面的编程代码。
+            JavaScript插入HTML页面后，可由所有的现代浏览器执行。
+            JavaScript很容易学习。
+        3、您将学到什么
+            JavaScript：改变HTML图像
+               本例会动态地改变HTML <image>的来源（src）
+               以上实例中代码element.src.match("bulbon")的作用意思是：检索<img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif" width="100" height="180">
+               里面src属性的值有没有包含bulbon这个字符串，如果存在字符串bulbon，图片src更新为bulboff.gif，若匹配不到bulbon字符串，src则更新为bulbon.gif
+
+            JavaScript能够改变任意HTML元素的大多数属性，而不仅仅是图片。
+    -->
+    <script>
+        function changeImg() {
+            let element = document.getElementById("myImg")
+            if (element.src.match("bulbon")) {
+                element.src = "../images/pic_bulboff.gif";
+            } else {
+                element.src = "../images/pic_bulbon.gif";
+            }
+        }
+    </script>
+    <img id="myImg" alt="bulbo on or off" src="../images/pic_bulboff.gif" width="100" height="180" onclick="changeImg()">
+    <p>点击灯泡就可以打开或关闭这盏灯。</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript简介</title>
+</head>
+<body>
+    <!--
+        1、JavaScript简介
+            JavaScript是互联网上最流行的脚本语言，这门语言可用于HTML和web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
+        2、JavaScript是脚本语言
+            JavaScript是一种轻量级的编程语言。
+            JavaScript是可插入HTML页面的编程代码。
+            JavaScript插入HTML页面后，可由所有的现代浏览器执行。
+            JavaScript很容易学习。
+        3、您将学到什么
+            JavaScript：改变HTML内容
+               使用JavaScript来处理HTML内容是非常强大的功能
+               您会经常看到document.getElementById("some id")。这个方法是HTML DOM中定义的。
+               DOM(Document Object Model)（文档对象模型）是用于访问HTML元素的正式W3C标准。
+               您将在本教程的多个章节中学到有关HTML DOM的知识。
+    -->
+    <h1>我的第一段JavaScript</h1>
+    <p id="demo">JavaScript能改变HTML元素的内容。</p>
+    <script>
+        function myFunc() {
+            // 找到元素
+            x = document.getElementById("demo");
+            // 改变内容
+            x.innerHTML = "Hello JavaScript!";
+        }
+    </script>
+    <button type="button" onclick="myFunc()">点击这里</button>
+</body>
+</html>
