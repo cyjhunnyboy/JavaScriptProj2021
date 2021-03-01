@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript用法</title>
+    <script>
+        function myFunction() {
+            document.write("<h1>这是一个标题</h1>")
+            document.write("<p>使用函数来执行<strong>doucment.write</strong>，即在文档加载后再执行这个操作，会实现文档覆盖</p>");
+            document.write("<p>这是一个段落。</p>")
+        }
+    </script>
+</head>
+<body>
+    <!--
+        1、在<head>或者<body>的JavaScript
+            您可以在HTML文档中放入不限数量的脚本。
+            脚本可以位于HTML的<body>或<head>部分中，或者同时存在于两个部分中。
+            通常的做法是把函数放入<head>部分中，或者放在页面底部。这样就可以把它们安置到同一处位置。不会干扰页面内容。
+
+            HTML输出流中使用document.write，相当于添加在原有html代码中添加一串html代码。而如果在文档加载后使用（如使用函数），会覆盖整个文档
+    -->
+    <h1>JavaScript用法</h1>
+    <p>
+        您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+        如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+    </p>
+    <button type="button" onclick="myFunction()">点击这里</button>
+</body>
+</html>

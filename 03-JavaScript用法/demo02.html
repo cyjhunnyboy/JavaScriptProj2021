@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript用法</title>
+</head>
+<body>
+    <!--
+        JavaScript 用法
+            1、<body>中的JavaScript
+                JavaScript会在页面加载时向HTML的<body>写文本
+
+            2、JavaScript函数和事件
+                上面例子中的JavaScript语句，会在页面加载时执行。
+                通常，我们需要在某个事件发生时执行代码，比如当用户点击按钮时。
+                如果我们把JavaScript代码放入函数中，就可以在事件发生时调用该函数。
+                您将在稍后的章节学到更多有关JavaScript函数和事件的知识。
+    -->
+    <p>JavaScript能够直接写入HTML输出流中：</p>
+    <p>
+        <script>
+            document.write("<h1>这是一个标题</h1>");
+            document.write("<p>这是一个段落。</p>");
+        </script>
+    </p>
+    <p>
+        您只能在HTML输出流中使用<strong>document.write</strong>。
+        如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+    </p>
+</body>
+</html>

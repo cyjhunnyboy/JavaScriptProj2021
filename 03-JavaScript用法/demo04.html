@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript用法</title>
+</head>
+<body>
+    <!--
+        JavaScript 用法
+            1、在<head>或者<body>的JavaScript
+                您可以在HTML文档中放入不限数量的脚本。
+                脚本可以位于HTML的<body>或<head>部分中，或者同时存在于两个部分中。
+                通常的做法是把函数放入<head>部分中，或者放在页面底部。这样就可以把它们安置到同一处位置。不会干扰页面内容。
+            2、<body> 中的 JavaScript 函数
+                在本例中，我们把一个JavaScript函数放置到HTML页面的<body>部分。
+                该函数会在点击按钮时被调用
+    -->
+    <h1>我的Web页面</h1>
+    <p id="demo">这是一个段落。</p>
+    <button type="button" onclick="func();">点击这里</button>
+    <script>
+        function func() {
+            document.getElementById("demo").innerHTML = "我的第一个JavaScript函数";
+        }
+    </script>
+</body>
+</html>
