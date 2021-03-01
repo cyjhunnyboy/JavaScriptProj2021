@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript输出</title>
+</head>
+<body>
+    <!--
+        JavaScript 输出
+            JavaScript没有任何打印或者输出的函数。
+            1、JavaScript显示数据
+                JavaScript可以通过不同的方式来输出数据：
+                a、使用window.alert()弹出警告框。
+                b、使用document.write()方法将内容写到HTML文档中。
+                c、使用innerHTML写入到HTML元素中。
+                d、使用console.log()写入到浏览器的控制台。
+
+            2、操作HTML元素
+                如需从JavaScript访问某个HTML元素，您可以使用document.getElementById(id)方法。
+                请使用"id"属性来标识HTML元素，并innerHTML来获取或插入元素内容
+
+                以上JavaScript语句（在<script>标签中）可以在web浏览器中执行
+                document.getElementById("demo")是使用id属性来查找HTML元素的JavaScript代码
+                innerHTML="段落已修改。"是用于修改元素的HTML内容(innerHTML)的JavaScript代码。
+
+                在大多数情况下，在本教程中，我们将使用上面描述的方法来输出
+                上面的例子直接把id="demo"的<p>元素写到HTML文档输出中
+    -->
+    <h1>我的第一个页面</h1>
+    <p id="demo">我的第一个段落。</p>
+    <script>
+        document.getElementById("demo").innerHTML = "段落已修改。";
+    </script>
+</body>
+</html>
