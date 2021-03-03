@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+    <!--
+        JavaScript 语法
+            JavaScript是一个程序语言。语法规则定义了语言结构。
+            JavaScript是一个脚本语言。
+            它是一个轻量级，但功能强大的编程语言。
+
+            1、JavaScript字面量
+                在编程语言中，一般固定值称为字面量，如：3.14.
+                对象（Object）字面量 定义一个对象：{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+    -->
+    <p id="demo"></p>
+    <script>
+        const obj = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        document.getElementById("demo").innerHTML = obj.firstName;
+    </script>
+</body>
+</html>
