@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+    <!--
+        JavaScript 语法
+            JavaScript是一个程序语言。语法规则定义了语言结构。
+            JavaScript是一个脚本语言。
+            它是一个轻量级，但功能强大的编程语言。
+
+            1、JavaScript 数据类型
+                JavaScript有多种数据类型：数字、字符串、数组、对象等等
+                var lenght = 16;                                        // Number 通过数字字面量赋值
+                var points = lenght * 10;                               // Number 通过表达式字面量赋值
+                var lastName = "Johnson";                               // String 通过字符串字面量赋值
+                var cars = ["Saab", "Volvo", "BMW"];                    // Array 通过数组字面量赋值
+                var person = {firstName: "John", lastName: "Doe"};      // Object 通过对象字面量赋值
+    -->
+    <p id="demo"></p>
+    <script>
+        // 定义两个变量x, y
+        let x, y;
+        // 两个字面量相加，结果赋值给变量 x
+        x = 5 + 6;
+        // 乘法
+        y = x * 10;
+        // 向浏览器<p>标签写入变量y的值
+        document.getElementById("demo").innerHTML = y;
+    </script>
+</body>
+</html>

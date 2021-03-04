@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+    <!--
+        JavaScript 语法
+            JavaScript是一个程序语言。语法规则定义了语言结构。
+            JavaScript是一个脚本语言。
+            它是一个轻量级，但功能强大的编程语言。
+
+            1、JavaScript 函数
+                JavaScript语句可以写在函数内，函数可以重复使用。
+                引用一个函数 = 调用函数（执行函数内的语句）。
+    -->
+    <p id="demo"></p>
+    <script>
+        /**
+         * 定义一个两个数相乘的函数
+         * @param a 参数a
+         * @param b 参数b
+         * @returns 返回a乘以b的结果
+         */
+        function myFunc(a, b) {
+            // 返回a乘以b的结果
+            return a * b;
+        }
+
+        // 调用函数，赋值调用
+        let result = myFunc(5, 6);
+        // 浏览器<p>标签内显示结果
+        document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+    <!--
+        JavaScript 语法
+            JavaScript是一个程序语言。语法规则定义了语言结构。
+            JavaScript是一个脚本语言。
+            它是一个轻量级，但功能强大的编程语言。
+
+            1、JavaScript 注释
+                不是所有的JavaScript语句都是"命令"。双斜杠//后的内容将会被浏览器忽略
+                // 我不会执行
+    -->
+    <p id="demo"></p>
+    <script>
+        // 定义两个变量x, y
+        let x, y;
+        // 两个字面量相加，结果赋值给变量 x
+        x = 5 + 6;
+        // 乘法
+        y = x * 10;
+        // 向浏览器<p>标签写入变量y的值
+        document.getElementById("demo").innerHTML = y;
+    </script>
+</body>
+</html>

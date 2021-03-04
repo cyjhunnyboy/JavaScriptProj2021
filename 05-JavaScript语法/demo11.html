@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+    <!--
+        JavaScript 语法
+            JavaScript是一个程序语言。语法规则定义了语言结构。
+            JavaScript是一个脚本语言。
+            它是一个轻量级，但功能强大的编程语言。
+
+            1、JavaScript 关键字
+                JavaScript关键字用于标识要执行的操作。
+                和其他任何编程语言一样，JavaScript保留了一些关键字为自己所用。
+                var关键字告诉浏览器创建一个新的变量：
+                var x = 5 + 6;
+                var y = x * 10;
+                JavaScript同样保留了一些关键字，这些关键字在当前的语言版本中并没有使用。但在以后JavaScript扩展中会用到。
+                以下是JavaScript中最重要的保留字（按字母顺序）：
+                abstract	    else	    instanceof	    super
+                boolean 	    enum	    int	            switch
+                break	        export	    interface	    synchronized
+                byte	        extends	    let	            this
+                case	        false	    long	        throw
+                catch	        final	    native	        throws
+                char	        finally	    new	            transient
+                class	        float	    null	        true
+                const	        for	        package	        try
+                continue	    function	private	        typeof
+                debugger	    goto	    protected	    var
+                default	        if	        public	        void
+                delete	        implements	return	        volatile
+                do	            import	    short	        while
+                double	        in	        static	        with
+    -->
+    <p id="demo"></p>
+    <script>
+        let x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo").innerHTML = y;
+    </script>
+</body>
+</html>
