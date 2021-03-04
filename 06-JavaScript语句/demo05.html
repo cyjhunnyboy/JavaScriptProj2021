@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+    <script>
+        function myFunc() {
+            document.getElementById("demo").innerHTML = "你好世界！";
+            document.getElementById("myDiv").innerHTML = "你最近怎么样？";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            1、JavaScript 语句标识符
+                JavaScript语句通常以一个语句标识符为开始，并执行该语句。
+                语句标识符是保留字不能作为变量使用。
+                下表列出了JavaScript语句标识符（关键字）：
+                语句              描述
+                break            用于跳出循环。
+                catch            语句块，在try语句执行出错时执行catch语句块。
+                continue         跳过循环中的一个迭代。
+                do...while       执行一个语句块，在条件语句为true时继续执行该语句块。
+                for              在条件语句为true时，可以将代码块执行指定的次数。
+                for...in         用于遍历数组或对象的属性（对数组或者对象的属性进行循环操作）。
+                function         定义一个函数。
+                if...else        用于基于不同的条件来执行不同的动作。
+                return           退出函数。
+                switch           用于基于不同的条件来执行不同的动作。
+                throw            抛出（生成）错误。
+                try              实现错误处理。与catch一同使用。
+                var              声明一个变量。
+                while            当条件语句为true时，执行语句块。
+    -->
+    <h1>我的Web网页</h1>
+    <p id="demo">我是一个段落。</p>
+    <div id="myDiv">我是一个div。</div>
+    <p><button type="button" onclick="myFunc()">点击这里</button></p>
+    <p>当您点击上面的按钮时，两个元素会改变。</p>
+</body>
+</html>

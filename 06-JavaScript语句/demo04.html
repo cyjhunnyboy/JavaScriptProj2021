@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+    <script>
+        function myFunc() {
+            document.getElementById("demo").innerHTML = "你好世界！";
+            document.getElementById("myDiv").innerHTML = "你最近怎么样？";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            1、JavaScript 代码块
+                JavaScript可以分批地组合起来。
+                代码块以左花括号开始，以右花括号结束。
+                代码块的作用是一并地执行语句序列。
+    -->
+    <h1>我的Web网页</h1>
+    <p id="demo">我是一个段落。</p>
+    <div id="myDiv">我是一个div。</div>
+    <p><button type="button" onclick="myFunc()">点击这里</button></p>
+    <p>当您点击上面的按钮时，两个元素会改变。</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            JavaScript语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。
+            1、JavaScript 代码
+                JavaScript代码是JavaScript语句的序列。
+                浏览器按照编写顺序依次执行每条语句。
+                本例向网页输出一个标题和两个段落。
+    -->
+    <h1>我的Web网页</h1>
+    <p id="demo">一个段落。</p>
+    <div id="myDiv">一个DIV</div>
+    <script>
+        document.getElementById("demo").innerHTML = "你好 Dolly";
+        document.getElementById("myDiv").innerHTML = "你最近怎么样？"
+    </script>
+</body>
+</html>

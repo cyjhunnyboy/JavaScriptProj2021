@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            1、JavaScript 对代码进行折行
+                您可以在文本字符串中使用反斜杠对代码进行换行。下面的例子会正确地显示：
+                document.write("你好 \
+                世界!");
+                不过，您不能像这样折行：
+                document.write \
+                ("你好世界！");
+
+                知识点：JavaScript是脚本语言，浏览器会在读取代码时，逐行地执行脚本代码。而对于传统编程来说，会在执行前对所有代码进行编译。
+    -->
+    <h1>我的Web网页</h1>
+    <script>
+        document.write("你好 \
+        世界!");
+    </script>
+</body>
+</html>

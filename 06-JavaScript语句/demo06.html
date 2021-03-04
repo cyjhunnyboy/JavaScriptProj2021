@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+    <script>
+        function myFunc() {
+            document.getElementById("demo").innerHTML = "你好世界！";
+            document.getElementById("myDiv").innerHTML = "你最近怎么样？";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            1、JavaScript 空格
+                JavaScript会忽略多余的空格。您可以向脚本条件空格，来提高其可读性。下面的两行代码是等效的：
+                var person="runoob";
+                var person = "runoob";
+    -->
+    <h1>我的Web网页</h1>
+    <p id="demo">我是一个段落。</p>
+    <div id="myDiv">我是一个div。</div>
+    <p><button type="button" onclick="myFunc()">点击这里</button></p>
+    <p>当您点击上面的按钮时，两个元素会改变。</p>
+</body>
+</html>

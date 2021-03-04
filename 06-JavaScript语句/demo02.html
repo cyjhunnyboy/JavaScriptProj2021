@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+</head>
+<body>
+    <!--
+        JavaScript 语句
+            JavaScript语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。
+            1、JavaScript 分号
+                分号用于分隔JavaScript语句。
+                通常我们在每条可执行的语句结尾添加分号。
+                使用分号的另一用处是在一行中编写多条语句。
+                实例：
+                    a = 5;
+                    b = 6;
+                    c = a + b;
+                以上实例也可以这么写
+                    a = 5; b = 6; c = a + b;
+                注意：您也可以看到不带分号的案例。在JavaScript中，用分号来结束语句是可选的。
+    -->
+    <h1>我的网页</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        a = 1;
+        b = 2;
+        c = a + b;
+        document.getElementById("demo1").innerHTML = c;
+        x = 1; y = 2; z = x + y;
+        document.getElementById("demo2").innerHTML = z;
+    </script>
+</body>
+</html>
