@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 变量</title>
+    <script>
+        function myFunc() {
+            let carName = "Volvo";
+            document.getElementById("demo").innerHTML = "carName = " + "\"" + carName + "\"";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 变量
+            1、Value = undefined
+                在计算机程序中，经常会声明无值的变量。未使用值声明的变量，其值实际上是undefined。
+                在执行以下语句后，变量carName的值将是undefined：
+                    var carName;
+    -->
+    <h1>这是我第一个JavaScript程序</h1>
+    <p>点击这里来创建变量，并显示结果。</p>
+    <button onclick="myFunc()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>

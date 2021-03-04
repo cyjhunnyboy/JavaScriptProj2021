@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 变量</title>
+    <script>
+        function myFunc() {
+            let carName = "Volvo";
+            document.getElementById("demo").innerHTML = "carName = " + "\"" + carName + "\"";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 变量
+            1、重新声明JavaScript变量
+                如果重新声明JavaScript变量，该变量的值不会丢失。
+                在以下两条语句执行后，变量carName的值依然是"Volvo"：
+                    var carName="Volvo";
+                    var carName;
+    -->
+    <h1>这是我第一个JavaScript程序</h1>
+    <p>点击这里来创建变量，并显示结果。</p>
+    <button onclick="myFunc()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>

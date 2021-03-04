@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 变量</title>
+</head>
+<body>
+    <!--
+        JavaScript 变量
+            1、JavaScript 数据类型
+                JavaScript变量还能保存其他数据类型，比如文本值（name="Bill Gates"）。
+                在JavaScript中，类似"Bill Gates"这样一条文本被称为字符串。
+                JavaScript变量有很多类型，但是现在，我们只关注数字和字符串。
+                当你向变量分配文本值时，应该用双引号或单引号包围这个值。
+                当你向变量赋的值是数值时，不要使用引号。如果你使用引号包围数值，改值被作为文本来处理。
+    -->
+    <h1>JavaScript 变量</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let pi = 3.14;
+        let name = "Bill Gates";
+        let answer = "Yes, I am!";
+        document.getElementById("demo1").innerHTML = "pi = " + pi;
+        document.getElementById("demo2").innerHTML = name;
+        document.getElementById("demo3").innerHTML = answer;
+    </script>
+</body>
+</html>
