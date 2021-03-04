@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 注释</title>
+</head>
+<body>
+    <!--
+        JavaScript 注释
+            JavaScript注释可用于提高代码的可读性。
+            1、应用注释符号验证浏览器是否支持JavaScript脚本功能
+                如果用户不能确定浏览器是否支持JavaScript脚本，那么可以应用HTML提供的注释符号进行验证。HTML注释符号是以"箭头--"开始以"--箭头"结束的。
+                如果在此注释符号内编写JavaScript脚本，对于不支持JavaScript的浏览器，将会把编写的JavaScript脚本作为注释处理。
+                使用JavaScript脚本在页面中输出一个字符串，将JavaScript脚本编写在HTML注释中，如果浏览器支持JavaScript将输出此字符串，如果不支持将不输出此字符串
+    -->
+    <h1>我的第一个JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        <!--
+        document.getElementById("demo").innerHTML = "您的浏览器支持JavaScript脚本！";
+        //-->
+    </script>
+</body>
+</html>
