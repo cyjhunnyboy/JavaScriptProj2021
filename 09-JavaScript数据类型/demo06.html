@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 数据类型</title>
+</head>
+<body>
+    <!--
+        JavaScript 数据类型
+            1、JavaScript 对象
+                对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式（name: value）来定义。属性由逗号分隔
+                    var person = {firstName: "John", lastName: "Doe", id: 5566};
+                上面例子中的对象（person）有三个属性：firstName、lastName以及id。
+                空格和折行无关紧要。声明可以横跨多行
+                    var person = {
+                        firstName: "John",
+                        lastName: "Doe",
+                        id: 5566
+                    };
+                对象有两种寻址方式：
+                    name = person.lastName;
+                    name = person["lastName"];
+    -->
+    <script>
+        // 定义一个person对象
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+
+        // 对象寻址方式1
+        document.write(person.firstName + "<br>");
+        // 对象寻址方式2
+        document.write(person["lastName"] + "<br>");
+        document.write(person["id"] + "<br>");
+    </script>
+</body>
+</html>

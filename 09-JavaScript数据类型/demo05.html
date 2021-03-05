@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 数据类型</title>
+</head>
+<body>
+    <!--
+        JavaScript 数据类型
+            1、JavaScript 数组
+                下面代码创建名为cars的数组
+                var cars = new Array();
+                cars[0] = "Saab";
+                cars[1] = "Volvo";
+                cars[2] = "BMW";
+                或者（condensed array)：
+                var cars = new Array("Saab", "Volvo", "BMW");
+                数组下标是基于零的，所以第一个项目是[0]，第二个是[1]，以此类推。
+    -->
+    <script>
+        let i;
+        var cars = new Array();
+        cars[0] = "Saab";
+        cars[1] = "Volvo";
+        cars[2] = "BMW";
+
+        for (i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+    </script>
+</body>
+</html>
