@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 对象</title>
+</head>
+<body>
+    <!--
+        JavaScript 对象
+            JavaScript对象是拥有属性和方法的数据。
+            1、真实生活中的对象，属性和方法
+                真实生活中，一辆汽车是一个对象。
+                对象有它的属性，如重量和颜色等，方法有启动停止等
+                对象          属性                          方法
+                             car.name = Fiat               car.start()
+                             car.model = 500               car.drive()
+                car          car.weight = 850kg            car.brake()
+                             car.color = white             car.sotp()
+                所有汽车都有这些属性，但是每款汽车的属性都不尽相同。
+                所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。
+            2、JavaScript 对象
+                在JavaScript中，几乎所有的事物都是对象。
+                你已经学习了JavaScript变量的赋值
+                以下代码为变量car设置值为"Fiat"
+                var car = "Fiat";
+                对象也是一个变量，但对象可以包含多个值（多个变量），每个值以name:value对呈现。
+                var car = {name: "Fiat", mode: 500, color: "white"};
+                以上实例中，3个值（"Fiat", 500, "White")赋予变量car。
+
+                注意：在JavaScript中，对象是非常重要的，当你理解了对象，就可以了解JavaScript。
+                注意：JavaScript对象是变量的容器
+
+            3、对象的定义
+                你可以使用字符定义和创建JavaScript对象
+                var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
+                定义JavaScript对象可以跨越多行，空格跟换行不是必须的
+    -->
+    <p>创建JavaScript对象。</p>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        document.getElementById("demo").innerHTML = person.firstName + " 现在 " + person.age + " 岁。";
+    </script>
+</body>
+</html>

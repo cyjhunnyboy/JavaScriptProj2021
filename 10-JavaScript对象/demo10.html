@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 对象</title>
+</head>
+<body>
+    <!--
+        JavaScript 对象
+            1、JavaScript 对象实例
+                访问对象属性：通过["property"]方式
+    -->
+    <p>有两种方式可以访问对象属性：</p>
+    <p>你可以使用.property或["property"]。</p>
+    <p id="demo"></p>
+    <script>
+        // 创建person对象
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+        // 通过["property"]方式访问person对象属性并输出到HTML的<p>元素中
+        document.getElementById("demo").innerHTML = person["firstName"] + " " + person["lastName"];
+    </script>
+</body>
+</html>

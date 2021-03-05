@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 对象</title>
+</head>
+<body>
+    <!--
+        JavaScript 对象
+            JavaScript对象是拥有属性和方法的数据。
+            1、真实生活中的对象，属性和方法
+                真实生活中，一辆汽车是一个对象。
+                对象有它的属性，如重量和颜色等，方法有启动停止等
+                对象          属性                          方法
+                             car.name = Fiat               car.start()
+                             car.model = 500               car.drive()
+                car          car.weight = 850kg            car.brake()
+                             car.color = white             car.sotp()
+                所有汽车都有这些属性，但是每款汽车的属性都不尽相同。
+                所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。
+            2、JavaScript 对象
+                在JavaScript中，几乎所有的事物都是对象。
+                你已经学习了JavaScript变量的赋值
+                以下代码为变量car设置值为"Fiat"
+                var car = "Fiat";
+                对象也是一个变量，但对象可以包含多个值（多个变量），每个值以name:value对呈现。
+                var car = {name: "Fiat", mode: 500, color: "white"};
+                以上实例中，3个值（"Fiat", 500, "White")赋予变量car。
+
+                注意：在JavaScript中，对象是非常重要的，当你理解了对象，就可以了解JavaScript。
+                注意：JavaScript对象是变量的容器
+
+            3、对象的定义
+                你可以使用字符定义和创建JavaScript对象
+                var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
+                定义JavaScript对象可以跨越多行，空格跟换行不是必须的
+
+            4、对象的属性
+                可以说"JavaScript对象是变量的容器"。
+                但是，我们通常认为"JavaScript"对象是键值对的容器"。
+                键值对通常写法为name:value（键与值以冒号分割）。
+                键值对在JavaScript对象通常称为对象属性。
+
+                注意：JavaScript对象是属性变量的容器
+
+                对象键值对的写法类似于：
+                    PHP中的关联数组
+                    Python中的字典
+                    C语言中的哈希表
+                    Java中的哈希映射
+                    Ruby和Perl中的哈希表
+            5、访问对象属性
+                你可以通过两种方式访问对象属性
+                1）person.lastName;
+                2）person["lastName"];
+
+                注意：JavaScript对象是属性和方法的容器。
+    -->
+    <p>有两种方式可以访问对象属性：</p>
+    <p>你可以使用.property或["property"]。</p>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+        document.getElementById("demo").innerHTML = person["firstName"] + person["lastName"];
+    </script>
+</body>
+</html>
