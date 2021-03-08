@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 事件</title>
+</head>
+<body>
+    <!--
+        JavaScript 事件
+            HTML事件是发生在HTML元素上的事情。
+            当在HTML页面中使用JavaScript时，JavaScript可以触发这些事件。
+
+            1、JavaScript 可以做什么？
+                事件可以用于处理表单验证，用户输入，用户行为及浏览器动作：
+                    1）页面加载时触发事件
+                    2）页面关闭时触发事件
+                    3）用户点击按钮执行操作
+                    4）验证用户输入内容的合法性
+                    5）等等...
+                可以使用多种方法执行JavaScript事件代码：
+                    1）HTML事件属性可以直接执行JavaScript代码
+                    2）HTML事件属性可以调用JavaScript函数
+                    3）你可以为HTML元素指定自己的事件处理程序
+                    4）你可以阻止事件的发生
+                    5）等等...
+
+                在HTML DOM章节中你将会学到更多关于事件及事件处理程序的知识。
+    -->
+    <p>点击按钮执行<em>displayDate()</em>函数。</p>
+    <button onclick="displayDate()">点击这里</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = new Date();
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+</html>
