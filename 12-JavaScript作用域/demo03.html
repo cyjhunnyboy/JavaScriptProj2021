@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 作用域</title>
+</head>
+<body>
+    <!--
+        JavaScript 作用域
+            1、JavaScript 全局变量
+                变量在函数外定义，即为全局变量。
+                全局变量有全局作用域：网页中所有脚本和函数均可使用。
+
+                如果变量在函数内没有声明（没有使用var关键字），该变量为全局变量。
+                以下实例中carName在函数内，但是为全局变量。
+    -->
+    <p>如果你的变量没有声明，它将自动成为全局变量：</p>
+    <p id="demo"></p>
+    <script>
+        myFunc();
+        document.getElementById("demo").innerHTML = "我可以显示：" + carName;
+        function myFunc() {
+            carName = "BMW";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 作用域</title>
+</head>
+<body>
+    <!--
+        JavaScript 作用域
+            1、JavaScript 变量生命周期
+                JavaScript变量生命周期在它声明时初始化。
+                局部变量在函数执行完毕后销毁。
+                全局变量在页面关闭后销毁。
+            2、函数参数
+                函数参数只在函数内起作用，是局部变量
+            3、HTML中的全局变量
+                在HTML中，全局变量是window对象：所有数据变量都属于window对象。
+
+                你知道吗？
+                    你的全局变量，或者函数，可以覆盖window对象的变量或者函数。
+                    局部变量，包括window对象可以覆盖全局变量和函数。
+    -->
+    <p>在HTML中，所有全局变量都会成为window变量。</p>
+    <p id="demo"></p>
+    <script>
+        myFunc();
+        document.getElementById("demo").innerHTML = "我可以显示：" + window.carName;
+        function myFunc() {
+            carName = "Jeep";
+        }
+    </script>
+</body>
+</html>
