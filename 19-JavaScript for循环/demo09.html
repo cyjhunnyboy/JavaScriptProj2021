@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript for循环</title>
+    <script>
+        function func() {
+            var x;
+            var txt = "";
+            var person = {firstName: "bill", lastName: "Gates", age: 18};
+
+            for (x in person) {
+                txt = txt + person[x];
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript for 循环
+            循环可以将代码块执行指定的次数。
+            1、for/in 循环
+                JavaScript for/in语句循环遍历对象的属性。
+
+                您将在有关JavaScript对象的章节学到更多有关for/in循环的知识。
+    -->
+    <p>点击下面的按钮，循环遍历对象"person"的属性。</p>
+    <button onclick="func()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript for循环</title>
+    <script>
+        function func() {
+            var x = "";
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+            for (var i = 0; i < cars.length;) {
+                x = x + cars[i] + "<br>";
+                i++;
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript for 循环
+            循环可以将代码块执行指定的次数。
+            1、for 循环
+                for循环是你在希望创建循环时常会用到的工具。
+               下面是for循环的语法：
+                for (语句1; 语句2; 语句3) {
+                    被执行的代码块
+                }
+                语句1：（代码块）开始前执行
+                语句2：定义循环（代码块）的条件
+                语句3：在循环（代码块）已被执行之后执行
+
+                语句3
+                    通常语句3会增加初始变量的值。
+                    语句3也是可选的。
+                    语句3有多种用法。增量可以是负数（i--)，或者更大（i=i+15）。
+
+                    语句3也可以省略（比如当循环内部有相应的代码时）。
+    -->
+    <p>点击按钮遍历数组元素并输出。</p>
+    <button onclick="func()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
