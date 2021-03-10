@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 运算符</title>
+    <script>
+        function myFunc() {
+            var y = 5;
+            var z = 2;
+            var x;
+            x = y + z;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 运算符
+            运算符：=用于赋值
+            运算符：+用于加值
+            运算符：=用于给JavaScript变量赋值。
+            算术运算符： +用于把值加起来。
+
+            实例：指定变量值，并将值相加
+    -->
+    <p>y=5, z=2, x=y+z, x的值是？</p>
+    <p>点击按钮计算x的值。</p>
+    <button onclick="myFunc()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
