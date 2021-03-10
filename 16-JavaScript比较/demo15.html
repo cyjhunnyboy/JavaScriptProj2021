@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 比较</title>
+    <script>
+        function myFunc() {
+            var x = 6;
+            var y = 3;
+            if (!(x==y)) {
+                document.getElementById("demo").innerHTML = "You are good man!";
+            } else {
+                document.getElementById("demo").innerHTML = "You are bad man!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 比较和逻辑运算符
+            比较和逻辑运算符用于测试true或者false。
+            1、逻辑运算符
+                逻辑运算符用于测定变量或值之间的逻辑。
+                给定x=6以及y=3，下表解释了逻辑运算符
+                运算符     描述          例子
+                &&        and          (x < 10 && y > 1)为false
+                ||        or           (x ==5 || y == 5)为false
+                !         not          !(x==y)为true
+    -->
+    <p>x=6和y=3，如果表达式，!(x==y)为false，则输出"You are bad man!"，否则输出"You are good man!"</p>
+    <button onclick="myFunc()">尝试以下</button>
+    <p id="demo"></p>
+</body>
+</html>

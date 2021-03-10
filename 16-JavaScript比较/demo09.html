@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 比较</title>
+    <script>
+        function myFunc() {
+            var x = 5;
+            document.getElementById("demo").innerHTML = x < 8;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 比较和逻辑运算符
+            比较和逻辑运算符用于测试true或者false。
+            1、比较运算符
+                比较运算符在逻辑语句中使用，以测定变量或值是否相等。
+                x=5，下面的表格解释了比较运算符
+                运算符           描述                                    比较              返回值
+                ==              等于                                    x==8              false
+                                                                       x==5              true
+                ===             绝对等于(值和类型均相等)                  x==="5"           false
+                                                                       x===5             true
+                !=              不等于                                  x!=8              true
+                !==             不绝对等于(值和类型有一个不相等，          x!=="5"            true
+                                或者两个都不相等)                        x!==5              false
+                >               大于                                   x>8                false
+                <               小于                                   x<8                true
+                >=              大于或等于                              x>=8               false
+                <=              小于或等于                              x<=8               true
+    -->
+    <p>x=5，返回x&lt8的比较结果。</p>
+    <button onclick="myFunc()">尝试以下</button>
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 比较</title>
+    <script>
+        function myFunc() {
+            var age, voteable;
+            age = document.getElementById("age").value;
+            voteable = (age < 18) ? "年龄太小" : "年龄已达到";
+            document.getElementById("demo").innerHTML = voteable;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 比较和逻辑运算符
+            比较和逻辑运算符用于测试true或者false。
+            1、条件运算符
+                JavaScript还包含了基于某些条件对变量进行赋值的条件运算符。
+
+                实例：
+                    如果变量age中的值小于18，则向变量voteable赋值"年龄太小"，否则赋值"年龄已达到"。
+    -->
+    <p>点击按钮检测年龄。</p>
+    <label for="age">年龄：</label><input id="age" value="18"/>
+    <p>是否达到投票年龄？</p>
+    <button onclick="myFunc()">检测年龄</button>
+    <p id="demo"></p>
+</body>
+</html>
