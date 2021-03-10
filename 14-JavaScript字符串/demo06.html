@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 字符串</title>
+</head>
+<body>
+    <!--
+        JavaScript 字符串
+            1、字符串属性和方法
+                原始值字符串，如："John"，没有属性和方法（因为他们不是对象）。
+                原始值可以使用JavaScript的属性和方法，因为JavaScript在执行方法和属性时可以把原始值当作对象。
+                字符串方法我们将在下一章节中介绍
+
+                字符串属性
+                属性                  描述
+                constructor          返回创建字符串属性的函数
+                lenght               返回字符串的长度
+                prototype            允许您向对象添加属性和方法
+    -->
+    <p id="demo"></p>
+    <script>
+        var x = "John";     // x是一个字符串
+        document.getElementById("demo").innerHTML = x.constructor;
+    </script>
+    <p>constructor返回创建字符串属性的函数。</p>
+</body>
+</html>

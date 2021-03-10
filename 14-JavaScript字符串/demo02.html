@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 字符串</title>
+</head>
+<body>
+    <!--
+        JavaScript 字符串
+            1、字符串长度
+                可以使用内置属性lenght来计算字符串的长度。
+    -->
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var txt = "Hello World!";
+        document.getElementById("demo1").innerHTML = "字符串：\"" + txt + "\", 该字符串长度是：" + txt.length;
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo2").innerHTML = "字符串：\"" + txt + "\", 该字符串长度是：" + txt.length;
+    </script>
+</body>
+</html>

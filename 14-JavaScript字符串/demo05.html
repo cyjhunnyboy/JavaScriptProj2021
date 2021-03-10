@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 字符串</title>
+</head>
+<body>
+    <!--
+        JavaScript 字符串
+            1、字符串可以是对象
+                通常，JavaScript字符串是原始值，可以使用字符创建：var fisrtName = "John";
+                但我们也可以使用new关键字将字符串定义为一个对象：var firstName = new String("John");
+
+                注意：不要创建String对象。它会拖慢执行速度，并可能产生其他副作用
+
+                ===为绝对相等，即数据类型与值都必须相等。
+    -->
+    <p id="demo"></p>
+    <script>
+        var x = "John";     // x是一个字符串
+        var y = new String("John");     // y是一个对象
+        document.getElementById("demo").innerHTML = x === y;
+    </script>
+    <p>===为绝对相等，即数据类型和值都必须相等。</p>
+</body>
+</html>

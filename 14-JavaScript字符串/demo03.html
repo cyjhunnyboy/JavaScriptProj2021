@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 字符串</title>
+</head>
+<body>
+    <!--
+        JavaScript 字符串
+            1、特殊字符
+                在JavaScript中，字符串写在单引号或双括号中。
+                因为这样，以下实例JavaScript无法解析
+                    "We are the so-called "Vikings" from the north."
+                字符串 "We are the so-called " 被截断。
+                如何解决以上的问题呢？可以使用反斜杠（\）来转义"Vikings"字符串中的双引号，如下
+                     "We are the so-called \"Vikings\" from the north."
+                反斜杠是一个转义字符。 转义字符将特殊字符转换为字符串字符
+                转义字符 (\) 可以用于转义撇号，换行，引号，等其他特殊字符。
+                下表中列举了在字符串中可以使用转义字符转义的特殊字符：
+                代码              输出
+                \'               单引号
+                \"               双引号
+                \\               反斜杠
+                \n               换行
+                \r               回车
+                \t               tab（制表符）
+                \b               退格符
+                \f               换页符
+    -->
+    <p id="demo"></p>
+    <script>
+        var str = "Hell, \"John Doe\", Welcome to learn JavaScript!";
+        document.getElementById("demo").innerHTML = str;
+    </script>
+</body>
+</html>
