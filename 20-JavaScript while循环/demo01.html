@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript while循环</title>
+    <script>
+        function func() {
+            var x = "";
+            var i = 0;
+            while (i < 5) {
+                x = x + "该数字为 " + i + "<br>";
+                i++;
+            }
+
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript while循环
+            只要指定条件为true，循环就可以一直执行代码块。
+            1、while 循环
+                while循环会在指定条件为真时循环执行代码块。
+                语法：
+                    while(条件) {
+                        需要执行的代码块
+                    }
+
+                注意：如果您忘记增加条件中所用变量的值，该循环永远不会结束。这可能导致浏览器崩溃。
+
+                实例：
+                    本例中的循环将继续运行，只要变量i小于5
+    -->
+    <p>点击下面的按钮，只要i小于5就一直循环代码块。</p>
+    <button onclick="func()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>

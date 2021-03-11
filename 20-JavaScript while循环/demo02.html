@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript while循环</title>
+    <script>
+        function func() {
+            var x = "";
+            var i = 0;
+
+            do {
+                x = x + "该数字为 " + i + "<br>";
+                i++;
+            } while (i < 5);
+
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript while循环
+            1、do/while循环
+                do/while循环是while循环的实体。该循环会在检查条件是否为真之前执行一次代码块，然后如果条件为真的话，就会重复这个循环。
+                语法：
+                    do {
+                        需要执行的代码块
+                    } whhile(条件);
+
+                    注意：别忘记增加条件中所用变量的值，否则循环永远不会结束！
+
+                    下面的例子使用do/while循环。该循环至少会执行一次，即使条件为false它也会执行一次，因为代码块会在条件被测试前执行
+    -->
+    <p>点击下面的按钮，只要i小于5就一直循环代码块。</p>
+    <button onclick="func()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>

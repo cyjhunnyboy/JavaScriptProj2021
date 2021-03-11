@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript while循环</title>
+    <script>
+        function func() {
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var x = "";
+            var i = 0;
+
+            while (cars[i]) {
+                x = x + cars[i] + "<br>";
+                i++;
+            }
+
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript while循环
+            1、比较for和while
+                如果你已经阅读了前面那一章节关于for循环的内容，你会发现while循环与for循环很像。
+
+                本例中的循环使用while循环来显示cars数组中的所有值
+    -->
+    <p>通过while循环遍历数组cars中所有的值。</p>
+    <button onclick="func()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
