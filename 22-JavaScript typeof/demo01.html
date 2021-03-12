@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript typeof</title>
+</head>
+<body>
+    <!--
+        JavaScript typeof, null和undefined
+            1、typeof 操作符
+                你可以使用typeof操作符来检测变量的数据类型
+
+                注意：在JavaScript中，数组是一种特殊的对象类型。 因此typeof [1,2,3,4] 返回object。
+    -->
+    <p>typeof操作符返回变量或表达式的类型。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            typeof "John" + "<br>" +
+            typeof 3.14 + "<br>" +
+            typeof false + "<br>" +
+            typeof [1, 2, 3, 4] + "<br>" +
+            typeof {name: "John", age: 34}
+
+    </script>
+</body>
+</html>

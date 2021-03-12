@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript typeof</title>
+</head>
+    <body>
+    <!--
+        JavaScript typeof, null和undefined
+            1、undefined和null的区别
+                null和undefined的值相等，但类型不等
+    -->
+    <p>null和undefined的值相等，但类型不等。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            typeof undefined + "<br>" +
+            typeof null + "<br>" +
+            (null === undefined) + "<br>" +
+            (null == undefined);
+    </script>
+</body>
+</html>

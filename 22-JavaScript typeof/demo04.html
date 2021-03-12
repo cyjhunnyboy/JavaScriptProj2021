@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript typeof</title>
+</head>
+<body>
+    <!--
+        JavaScript typeof, null和undefined
+            1、undefined
+                在JavaScript中，undefined是一个没有设置值的变量。
+                typeof一个没有设置值的变量返回undefined。
+    -->
+    <p>变量的值如果不存在则该变量值为 <b>undefined</b>。</p>
+    <p id="demo"></p>
+    <script>
+        // 值为undefined（空），类型为undefined
+        var person;
+        document.getElementById("demo").innerHTML = typeof person;
+    </script>
+</body>
+</html>
