@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+    <script>
+        function func() {
+            var myVar1 = 123;       // toString 转换为"123"
+            var myvar2 = true;      // toString 转换为"true"
+            var myvar3 = false;     // toString 转换为"false"
+            document.getElementById("demo").innerHTML = myVar1 + "<br>" + myvar2 + "<br>" + myvar3;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、自动转换为字符串
+                数字和布尔值也经常相互转换
+                myVar = 123             // toString 转换为 "123"
+                myVar = true            // toString 转换为 "true"
+                myVar = false           // toString 转换为 "false"
+    -->
+    <p>数字和布尔值也经常相互转换。</p>
+    <button onclick="func()">点击我</button>
+    <p id="demo"></p>
+</body>
+</html>

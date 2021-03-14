@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+    <script>
+        function func() {
+            var myVar1 = {name: "Fjohn"};        // toString 转换为 "[object Object]"
+            var myVar2 = [1,2,3,4];              // toString 转换为 "1,2,3,4"
+            var myVar3 = new Date();             // toString 转换为 "Fri Jul 18 2014 09:08:55 GMT+0200"
+            document.getElementById("demo").innerHTML = myVar1 + "<br>" + myVar2 + "<br>" + myVar3;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、自动转换为字符串
+                当你尝试输出一个对象或一个变量时JavaScript会自动调用变量的toString()方法。
+    -->
+    <p>当你尝试输出一个对象或一个变量时JavaScript会自动调用变量的toString()方法。</p>
+    <button onclick="func()">点击我</button>
+    <p id="demo"></p>
+</body>
+</html>
