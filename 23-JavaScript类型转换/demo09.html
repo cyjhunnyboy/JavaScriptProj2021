@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、将日期转换为字符串
+                Date() 返回字符串
+                    Date()      // 返回 Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)
+               全局方法String()可以将日期对象转换为字符串。
+                    String(new Date())      // 返回 Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)
+    -->
+    <p>全局方法String()将日期转换为字符串。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = String(new Date());
+    </script>
+</body>
+</html>

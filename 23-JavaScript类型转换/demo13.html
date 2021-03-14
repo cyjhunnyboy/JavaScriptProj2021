@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、在Number方法章节中，你可以查看到更多关于字符串转换为数字的方法
+                方法                          描述
+                parseFloat()                 解析一个字符串，并返回一个浮点数。
+                parseInt()                   解析一个字符串，并返回一个整数。
+    -->
+    <p>通过Number方法paseFloat()将字符串转换为一个浮点数。</p>
+    <p id="demo"></p>
+    <script>
+        var strNum = "88.10";
+        document.getElementById("demo").innerHTML = "字符串数字'88.10'转换为浮点数结果为：" + parseFloat(strNum);
+    </script>
+</body>
+</html>

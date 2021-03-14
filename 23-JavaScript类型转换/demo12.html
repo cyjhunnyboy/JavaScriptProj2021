@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、将字符串转换为数字
+                全局方法Number()可以将字符串转换为数字。
+                字符串包含数字（如："3.14"）转换为数字（如：3.14）。
+                空字符串转换为0。
+                其他字符串会转换为NaN（不是个数字）。
+    -->
+    <p>全局方法Number()将字符串转换为数字。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            Number("3.14") + "<br>" +
+            Number(" ") + "<br>" +
+            Number("99 88");
+    </script>
+</body>
+</html>

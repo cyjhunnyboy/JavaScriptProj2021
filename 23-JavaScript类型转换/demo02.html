@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 数据类型
+            1、constructor 属性
+                constructor 属性返回所有JavaScript变量的构造函数。
+    -->
+    <p>constructor属性返回变量或对象的构造函数。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            "John".constructor + "<br>" +
+            (3.14).constructor + "<br>" +
+            false.constructor + "<br>" +
+            [1, 2, 3, 4].constructor + "<br>" +
+            {name: "John", age: 34}.constructor + "<br>" +
+            new Date().constructor + "<br>" +
+            function () {}.constructor + "<br>";
+    </script>
+</body>
+</html>

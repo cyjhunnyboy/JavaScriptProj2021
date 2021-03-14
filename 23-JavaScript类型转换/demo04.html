@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、constructor 属性
+                可以使用constructor属性来查看对象是否为日期（包含字符串“Date”）
+    -->
+    <p>判断是否为日期。</p>
+    <p id="demo"></p>
+    <script>
+        var myDate = new Date();
+        document.getElementById("demo").innerHTML = isDate(myDate);
+        function isDate(myDate) {
+            return myDate.constructor.toString().indexOf("Date") > -1;
+        }
+    </script>
+</body>
+</html>

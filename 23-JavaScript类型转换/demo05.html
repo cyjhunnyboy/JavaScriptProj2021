@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、JavaScript 类型转换
+                JavaScript变量可以转换为新变量或其他数据类型
+                    1）通过使用JavaScript函数
+                    2）通过JavaScript自身自动转换
+
+            2、将数字类型转换为字符串
+                全局方法String()可以将数字转换为字符串。
+                该方法可用于任何类型的数字，字母、变量、表达式
+    -->
+    <p>String()方法可以将数字转换为字符串。</p>
+    <p id="demo"></p>
+    <script>
+        var x = 12;
+        document.getElementById("demo").innerHTML =
+            String(x) + "<br>" +
+            String(123) + "<br>" +
+            String(100 + 123);
+    </script>
+</body>
+</html>

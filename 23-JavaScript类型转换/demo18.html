@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+    <script>
+        function func() {
+            var d = new Date();
+            document.getElementById("demo").innerHTML = "将日期转换为数字结果为：" + Number(d);
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、将日期转换为数字
+                全局方法Number()可将日期转换为数字
+                d = new Date();
+                Number(d);          // 返回 1404568027739
+                日期方法getTime()也有相同的效果。
+                d = new Date();
+                d.getTime();        // 返回1404568027739
+    -->
+    <p>全局方法Number将日期转换为数字。</p>
+    <button onclick="func()">点击我</button>
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+    <script>
+        function func() {
+            document.getElementById("demo").innerHTML =
+                "false转换为数字为：" + Number(false) + "<br>" +
+                "true转换为数字为：" + Number(true);
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、将布尔值转换为数字
+                全局方法Number()可将布尔值转换为数字。
+                Number(false);      // 返回0
+                Number(true);       // 返回1
+    -->
+    <p>全局方法Number()将布尔值转换为数字。</p>
+    <button onclick="func()">点击我</button>
+    <p id="demo"></p>
+</body>
+</html>

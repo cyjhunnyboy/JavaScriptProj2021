@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、将日期转换为字符串
+                在Date方法章节中，你可以查看更多关于日期转换为字符串的函数
+                方法                      描述
+                getDate()                从Date对象返回一个月中的某一天（1~31）。
+                getDay()                 从Date对象返回一周中的某一天（0~6）。
+                getFullYear()            从Date对象以四位数字返回年份。
+                getHours()               返回Date对象的小时（0~23）。
+                getMilliseconds()        返回Date对象的毫秒（0~999）。
+                getMinutes()             返回Date对象的分钟（0~59）。
+                getMonth()               从Date对象返回月份（0~11）。
+                getSeconds()             返回Date对象的秒数（0~59）。
+                getTime()                返回1979年1月1日至今的毫秒数。
+    -->
+    <p>通过Date方法获取日期时间相关数据。</p>
+    <p id="demo"></p>
+    <script>
+        var date = new Date();
+        document.getElementById("demo").innerHTML =
+            date.getFullYear() + "年" +
+            (date.getMonth() + 1) + "月" +
+            date.getDate() + "日 " +
+            date.getHours() + "时" +
+            date.getMinutes() + "分" +
+            date.getSeconds() + "秒";
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+    <script>
+        function func() {
+            var y = "John";
+            var x = + y;
+            document.getElementById("demo").innerHTML =
+                "y的类型是：" + typeof y + ", 值是：" + y +
+                ", x的类型是：" + typeof x + ", 值是：" + x;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            1、一元运算符 +
+                Operator + 可用于将变量转换为数字
+                如果变量不能转换，它仍然会是一个数字，但是NaN（不是一个数字）
+    -->
+    <p>typeof操作符返回变量或表达式的类型。</p>
+    <button onclick="func()">点击我</button>
+    <p id="demo"></p>
+</body>
+</html>

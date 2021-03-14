@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 类型转换</title>
+</head>
+<body>
+    <!--
+        JavaScript 类型转换
+            Number()转换为数字，String()转换为字符，Boolean()转换为布尔值。
+            1、JavaScript 数据类型
+                在JavaScript中有6种不同的数据类型：
+                    1）string
+                    2）number
+                    3）boolean
+                    4）object
+                    5）function
+                    6）symbol
+                3种对象类型：
+                    1）Object
+                    2）Date
+                    3）Array
+                2个不含任何值的数据类型
+                    1）null
+                    2）undefined
+
+            2、typeof操作符
+                可以使用typeof操作符来查看JavaScript变量的数据类型
+
+                注意：
+                    1）NaN的数据类型是number
+                    2）数组（Array）的数据类型是object
+                    3）日期（Date）的数据类型是object
+                    4）null的数据类型是object
+                    5）未定义变量的数据类型为undefined
+
+                如果对象是JavaScript Array或JavaScript Date，我们就无法通过typeof来判断它们的类型，因为都是返回object。
+    -->
+    <p>typeof操作符返回变量、对象、函数、表达式的类型。</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            typeof "john" + "<br>" +
+            typeof 3.14 + "<br>" +
+            typeof NaN + "<br>" +
+            typeof false + "<br>" +
+            typeof [1,2,3,4] + "<br>" +
+            typeof {name:'john', age:34} + "<br>" +
+            typeof new Date() + "<br>" +
+            typeof function () {} + "<br>" +
+            typeof myCar + "<br>" +
+            typeof null;
+    </script>
+</body>
+</html>
